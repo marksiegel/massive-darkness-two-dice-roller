@@ -8,34 +8,32 @@
     <link rel="stylesheet" href="./dice.css" />
   </head>
   <body>
-    <div id="dice-control-area">
-    </div>
+    <div id="dice-control-area"></div>
     <div>
       <button id="roll-button" class="roll-button">Roll All Dice</button>
-      <button id="roll-selected-button" class="roll-button">Reroll Selected Dice</button>
+      <button id="roll-selected-button" class="roll-button">
+        Reroll Selected Dice
+      </button>
     </div>
     <div id="result-area">
       <div id="result-attack">
-        <span class="result-caption">Attack:</span>
         <span id="result-attack-sword-label">0</span>
         <span class="pip pip-sword">&nbsp;</span>
         <span id="result-attack-bam-label">0</span>
         <span class="pip pip-bam">&nbsp;</span>
-        <span id="result-attack-diamond-label">0</span>
-        <span class="pip pip-diamond">&nbsp;</span>
+        <span id="result-attack-shadow-label">0</span>
+        <span class="pip pip-shadow">&nbsp;</span>
       </div>
       <div id="result-defense">
-        <span class="result-caption">Defense:</span>
         <span id="result-defense-shield-label">0</span>
         <span class="pip pip-shield">&nbsp;</span>
-        <span id="result-defense-bam-label">0</span>
-        <span class="pip pip-bam">&nbsp;</span>
-        <span id="result-defense-diamond-label">0</span>
-        <span class="pip pip-diamond">&nbsp;</span>
+        <span id="result-defense-claw-label">0</span>
+        <span class="pip pip-claw">&nbsp;</span>
+        <span id="result-defense-scratch-label">0</span>
+        <span class="pip pip-scratch">&nbsp;</span>
       </div>
     </div>
-    <div class="dice" id="dice">
-    </div>
+    <div class="dice" id="dice"></div>
     <script src="./main.js"></script>
   </body>
 </html>

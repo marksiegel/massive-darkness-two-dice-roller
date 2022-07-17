@@ -53,28 +53,34 @@ body {
     inset 0.5rem -0.25rem 0.5rem rgba(255, 255, 255, 0.15);
 }
 .die-yellow .die-item {
-  background-color: rgb(229, 215, 22);
+  background-color: #e5d716;
 }
-.die-red .die-item {
-  background-color: rgb(195, 25, 25);
+.die-orange .die-item {
+  background-color: #c35917;
 }
 .die-blue .die-item {
-  background-color: rgb(20, 104, 230);
+  background-color: #1468e6;
 }
-.die-green .die-item {
-  background-color: rgb(57, 198, 16);
+.die-purple .die-item {
+  background-color: #9710c6;
+}
+.die-black .die-item {
+  background-color: #000000;
 }
 .dice-control-yellow .dice-control-label {
-  color: rgb(229, 215, 22);
+  color: #e5d716;
 }
-.dice-control-red .dice-control-label {
-  color: rgb(195, 25, 25);
+.dice-control-orange .dice-control-label {
+  color: #c35917;
 }
 .dice-control-blue .dice-control-label {
-  color: rgb(20, 104, 230);
+  color: #1468e6;
 }
-.dice-control-green .dice-control-label {
-  color: rgb(57, 198, 16);
+.dice-control-purple .dice-control-label {
+  color: #9710c6;
+}
+.dice-control-black .dice-control-label {
+  color: #000000;
 }
 .dice-control-label {
   font-weight: 800;
@@ -136,7 +142,8 @@ body {
   transform: rotate3d(1, 0, 0, 90deg) translateZ(48px);
 }
 [data-side="6"] {
-  transform: rotate3d(0, 0, 1, 180deg) rotate3d(1, 0, 0, 180deg) translateZ(48px);
+  transform: rotate3d(0, 0, 1, 180deg) rotate3d(1, 0, 0, 180deg)
+    translateZ(48px);
 }
 .die-list .pip:nth-of-type(1) {
   grid-area: tl;
@@ -159,11 +166,17 @@ body {
 .pip-bam {
   background-position: -32px 0px;
 }
-.pip-diamond {
+.pip-shadow {
   background-position: -32px -32px;
 }
 .pip-shield {
- background-position: 0px -32px; 
+  background-position: 0px -32px;
+}
+.pip-scratch {
+  background-position: -64px -32px;
+}
+.pip-claw {
+  background-position: -64px 0px;
 }
 
 button {
@@ -187,20 +200,24 @@ button:hover {
   background-color: transparent;
   background-image: url("dice_buttons.png");
   width: 32px;
-  height: 32px;  
+  height: 32px;
 }
 button.dice-control-minus {
   background-position-y: -32px;
 }
-.dice-control-yellow button{
- background-position-x: -32px; 
+.dice-control-yellow button {
+  background-position-x: -32px;
 }
-.dice-control-blue button{
- background-position-x: -64px; 
+.dice-control-blue button {
+  background-position-x: -64px;
 }
-.dice-control-green button{
- background-position-x: -96px; 
+.dice-control-purple button {
+  background-position-x: -96px;
 }
+.dice-control-black button {
+  background-position-x: -128px;
+}
+
 #result-area {
   background: #efefef;
   width: fit-content;
